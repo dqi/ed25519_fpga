@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+   <db_ref path="<FULL PATH HERE>/ed25519_rc/tb_core_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_core" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/tb_core/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">core_ena</obj_property>
+      <obj_property name="ObjectShortName">core_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_comp_done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">core_comp_done</obj_property>
+      <obj_property name="ObjectShortName">core_comp_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_state_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_state_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">core_state_reg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_sk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_sk[255:0]</obj_property>
+      <obj_property name="ObjectShortName">core_sk[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_pk" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_pk[255:0]</obj_property>
+      <obj_property name="ObjectShortName">core_pk[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_M" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_M[255:0]</obj_property>
+      <obj_property name="ObjectShortName">core_M[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/hw/sha_block" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sha_block[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_block[1023:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_R" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_R[255:0]</obj_property>
+      <obj_property name="ObjectShortName">core_R[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/core_S" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">core_S[255:0]</obj_property>
+      <obj_property name="ObjectShortName">core_S[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_1/RAM" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RAM[5:0,511:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[5:0,511:0]</obj_property>
+      <obj_property name="label">BRAM_1</obj_property>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[5]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[5,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[5,511:0]</obj_property>
+         <obj_property name="label">hram_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[4]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[4,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[4,511:0]</obj_property>
+         <obj_property name="label">H(R,A,M)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[3]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[3,511:0]</obj_property>
+         <obj_property name="label">H(k)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[2]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[2,511:0]</obj_property>
+         <obj_property name="label">H(hM)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[1]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[1,511:0]</obj_property>
+         <obj_property name="label">inv_x</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_1/RAM[0]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0,511:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[0,511:0]</obj_property>
+         <obj_property name="label">sm_x</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_2/RAM" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RAM[3:0,255:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[3:0,255:0]</obj_property>
+      <obj_property name="label">BRAM_2</obj_property>
+      <wvobject fp_name="/tb_core/uut/bram_2/RAM[3]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[3,255:0]</obj_property>
+         <obj_property name="label">red_hram</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_2/RAM[2]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[2,255:0]</obj_property>
+         <obj_property name="label">red_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_2/RAM[1]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[1,255:0]</obj_property>
+         <obj_property name="label">inv_y</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_2/RAM[0]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[0,255:0]</obj_property>
+         <obj_property name="label">sm_y</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_3/RAM" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">RAM[3:0,255:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM[3:0,255:0]</obj_property>
+      <obj_property name="label">BRAM_3</obj_property>
+      <wvobject fp_name="/tb_core/uut/bram_3/RAM[3]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[3,255:0]</obj_property>
+         <obj_property name="label">r+hrama</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_3/RAM[2]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[2,255:0]</obj_property>
+         <obj_property name="label">red_hram_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_3/RAM[1]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[1,255:0]</obj_property>
+         <obj_property name="label">red_final</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_core/uut/bram_3/RAM[0]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0,255:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM[0,255:0]</obj_property>
+         <obj_property name="label">sm_z</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_1_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_1_we</obj_property>
+      <obj_property name="ObjectShortName">bram_1_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_2_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_2_we</obj_property>
+      <obj_property name="ObjectShortName">bram_2_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_3_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bram_3_we</obj_property>
+      <obj_property name="ObjectShortName">bram_3_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_1/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[511:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_2/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_core/uut/bram_3/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[255:0]</obj_property>
+   </wvobject>
+</wave_config>
